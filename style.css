@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -14,6 +16,8 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -28,14 +32,18 @@ nav ul li a {
 
 main {
     padding: 1em;
+    text-align: center; /* Centraliza os textos ao meio */
 }
 
 h1, h2 {
-    color: rgb(85, 18, 18); /* Cor preta para as letras */
+    color: black; /* Cor preta para as letras */
 }
 
 p {
     color: black; /* Cor preta para as letras */
+    text-align: justify; /* Justifica os textos */
+    max-width: 800px; /* Limita a largura dos parágrafos */
+    margin: 0 auto; /* Centraliza os parágrafos */
 }
 
 .slideshow-container {
