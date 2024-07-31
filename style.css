@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #ff5733; /* Cor chamativa */
+    background-color: #ff58337a; /* Cor chamativa */
     color: white;
     padding: 1em;
     text-align: center;
@@ -31,5 +31,5 @@ main {
 }
 
 h1, h2 {
-    color: #c70039; /* Cor chamativa */
+    color: #52091d; /* Cor chamativa */
 }
