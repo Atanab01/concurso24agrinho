@@ -16,19 +16,15 @@ function plusSlides(n) {
     slideIndex += n;
     if (slideIndex < 1) {slideIndex = slides.length;}
     if (slideIndex > slides.length) {slideIndex = 1;}
-    showSlides();
+    showSlidesManual();
 }
 
-function showSlides() {
+function showSlidesManual() {
     let slides = document.getElementsByClassName("mySlides");
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
     }
-    if (slideIndex > slides.length) {slideIndex = 1}
-    if (slideIndex < 1) {slideIndex = slides.length}
     slides[slideIndex-1].style.display = "block"; 
 }
 
-setInterval(() => {
-    plusSlides(1);
-}, 3000);
+setInterval(showSlides, 3000);
