@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #ff58337a; /* Cor chamativa */
+    background-color: #ff5733; /* Cor chamativa */
     color: white;
     padding: 1em;
     text-align: center;
@@ -31,9 +31,70 @@ main {
 }
 
 h1, h2 {
-    color: #52091d; /* Cor chamativa */
+    color: rgb(85, 18, 18); /* Cor preta para as letras */
 }
-img{
-    width: 60%;
-    
+
+p {
+    color: black; /* Cor preta para as letras */
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Esconde as partes fora da tela */
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
