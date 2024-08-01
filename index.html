@@ -5,42 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oportunidades no Campo e na Cidade</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Oportunidades no Campo e na Cidade</h1>
         <nav>
             <ul>
-                <li><a href="campo.html">Oportunidades no Campo</a></li>
-                <li><a href="cidade.html">Oportunidades na Cidade</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#opportunities">Oportunidades</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Bem-vindo!</h2>
-            <p>Seja bem-vindo ao nosso portal, onde exploramos um mundo de oportunidades tanto no campo quanto na cidade. Este é o lugar certo para descobrir caminhos diversos e promissores em ambas as esferas.</p>
-            <p><strong>No campo:</strong> Envolva-se em atividades agrícolas, pecuárias e de ecoturismo. A vida rural oferece um contato direto com a natureza, proporcionando uma experiência enriquecedora e sustentável. Desde a produção orgânica até o agroturismo, as possibilidades são inúmeras e cheias de potencial.</p>
-            <br>
+    <section id="home">
+        <h1>Bem-vindo ao site de Oportunidades no Campo e na Cidade</h1>
+        <p>Encontre as melhores oportunidades para você.</p>
+    </section>
+    <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>Informações sobre o projeto e a equipe.</p>
+            <button onclick="window.location.href='proposta.html'">Saiba Mais</button>
+    </section>
+    </section>
+    <section id="opportunities">
+        <h2>Oportunidades</h2>
+        <div class="card">
+            <img src="cidade.jpg" alt="Cidade">
+            <h3>Oportunidades na Cidade</h3>
             <p><strong>Na cidade:</strong> Mergulhe na vibrante atmosfera urbana, onde inovação e tecnologia se encontram. Oportunidades em setores como tecnologia da informação, comércio, serviços e indústrias criativas estão em constante crescimento. A vida na cidade é dinâmica e cheia de desafios estimulantes que podem levar sua carreira a novos patamares.</p>
             <br>
-            <p>Explore nossas seções dedicadas para saber mais sobre como você pode se beneficiar das vastas oportunidades em cada ambiente. Seja você um amante da tranquilidade do campo ou um entusiasta da agitação urbana, temos algo especial para você.</p>    
-        </section>
-        <section class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="campo.jpg" alt="Campo">
-            </div>
-            <div class="mySlides fade">
-                <img src="cidade.jpg" alt="Cidade">
-            </div>
-            <div class="mySlides fade">
-                <img src="campo-cidade.jpg" alt="Cidade e campo">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </section>
-    </main>
-    <script src="script.js"></script>
+        </div>
+        <div class="card">
+            <img src="campo.jpg" alt="campo">
+            <h3>Oportunidades no Campo</h3>
+            <p><strong>No campo:</strong> Envolva-se em atividades agrícolas, pecuárias e de ecoturismo. A vida rural oferece um contato direto com a natureza, proporcionando uma experiência enriquecedora e sustentável. Desde a produção orgânica até o agroturismo, as possibilidades são inúmeras e cheias de potencial.</p>
+            <br>
+        </div>
+        <button onclick="window.location.href='oportunidades.html'">Saiba Mais</button>
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Formas de entrar em contato conosco.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Oportunidades no Campo e na Cidade. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
